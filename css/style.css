@@ -1,0 +1,1209 @@
+
+.none { display: none;} /*TOPページ削除用*/
+.Backno { display: none;} /*スイッチ後　出現用ページ用*/
+.OpacityOff {opacity: 0;}
+.OpacityOn { opacity: 1;} /*出現用ページ選択クラス */
+
+.sr {
+    margin-top: 0px !important;
+}
+
+
+
+#mainBG {
+    position: relative;
+    height: 4400px;
+    height: 100%;
+    background-color: #90999b;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: 500;
+}
+
+#BackBox {
+    position: fixed;
+    transform-style:preserve-3d;
+    width: 100%;
+    height: 100%;
+    min-width: 1500px;
+    perspective: 1000px;
+    z-index: 10;
+    opacity: 0;    
+}
+
+
+.bottom {
+    position: absolute;
+    width: 100%;
+    height: 106%;
+	background: #d3d9e1;
+	background-image: linear-gradient(90deg, #706e6e 1px, transparent 0),
+	linear-gradient(#706e6e 1px, transparent 0);
+	background-size: 75px 75px;
+    transform: translateY(100px) rotateX(90deg) rotateZ(90deg);  
+}
+
+.top {
+    position: absolute;
+    width:100%;
+    height:100%;
+	background: #b9c1cd;
+	background-image: linear-gradient(90deg, #706e6e 1px, transparent 0),
+	linear-gradient(#706e6e 1px, transparent 0);
+	background-size: 75px 75px;
+    transform: translateY(-200px) rotateX(90deg) rotateZ(90deg);  
+}
+
+.back {
+    position: absolute;
+    width:100%;
+    height:100%;
+	background: #676a6c7e;
+    background-image: linear-gradient(90deg, #706e6e 1px, transparent 0),
+	linear-gradient(#706e6e 1px, transparent 0);
+   
+    transform: translateY(175%) translateX(94vh) translateZ(255px); 
+}
+
+.left {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    height: 750px;
+    background: #676a6c7e;
+	background-image: linear-gradient(90deg, #beb8b8 1px, transparent 0),
+	linear-gradient(#beb8b8 1px, transparent 0);
+	background-size: 75px 75px;
+    transform: translateX(-400px) rotateY(-100deg);  
+}
+
+.right {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    height: 750px;
+    background: #676a6c7e;
+	background-image: linear-gradient(90deg, #beb8b8 1px, transparent 0),
+	linear-gradient(#beb8b8 1px, transparent 0);
+	background-size: 75px 75px;
+    transform: translateX(400px) rotateY(100deg);  
+}
+
+
+/* TOPPAGE */
+.box {
+    width: 100%;
+    max-width: 900px;
+    height: 77vh;
+    margin: 0px auto;
+}
+
+#boxe{
+    position: relative;
+    height: 100vh;
+    font-size: 100px;
+    color: #fff;
+    letter-spacing: 40px;
+    padding-top: 40vh;
+    filter: drop-shadow(6px 4px 2px  #606060);
+    z-index: 201;
+}
+
+#topPage {
+    position: relative;
+    height: 94vh;
+    min-width: 1000px;
+    background-color: #7e7b7a;
+}
+
+#topmark {
+    position: absolute;
+    opacity: 0.7;
+    height: 80vh;
+    top: 20vh;
+    left: 25vw;
+    z-index: 200;
+}
+
+#mark {
+    width: 100%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(4px 4px 1px  #4b4a4a);
+}
+
+.startbox {
+    position: relative;
+    width: 400px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 203;
+    filter: drop-shadow(6px 6px 1px  #4b4a4a);
+    
+}
+
+.startbox:active {
+    filter: none;
+    position: relative;
+    top: 3px;
+    }
+
+#strbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    letter-spacing: 5px;
+    border: none;
+    outline: none;
+    background: none;
+    z-index: 202;
+}
+
+#topbutton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 201;
+}
+
+
+
+
+/* TOP PAGEここまで */
+
+#Allarea {
+    position: relative;
+    z-index: 12;
+    width: 80%;
+    min-width: 900px;
+    max-width: 1400px;
+    height: 3750px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e5f3ea;
+    background-image: linear-gradient(90deg, #b5b4b431 2px, transparent 0),
+	linear-gradient(#b5b4b431 2px, transparent 0);
+	background-size: 100px 100px;
+    border: solid 2px;  
+}
+
+/* SERVICE */
+
+.service {
+    height: 1300px;
+}
+
+.serviceTitleBox {
+    width: 700px;
+    height: 200px;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.serviceTitle{
+    font-size: 150px;
+    color: #403f3fad;
+    filter: drop-shadow(6px 4px 2px  #898989);
+    letter-spacing: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 300;
+}
+
+.serviceTitle > span {
+    font-size: 200px;
+    -webkit-text-stroke: 3px #d085fbc5;
+}
+
+.serviceSubTitlebox{
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+}
+
+.serviceSubTitle{
+    font-size: 24px;
+    color: #403f3fad;
+    letter-spacing: 10px;
+}
+
+.serviceSubTitle > span {
+    background:linear-gradient(transparent 0%, transparent 60%, #ffd1d1ef 50%) ;
+    padding-left: 10px;
+}
+
+
+.serviceContent {
+    display: flex;
+    justify-content: center;
+    height: 24vh;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.web{
+    margin-right: 30px;
+   
+}
+
+
+
+.icon{
+    width: 150px;
+    height: 150px;
+}
+
+.Text {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.Text > h3 {
+    font-size: 24px;
+    height: 75px;
+}
+
+.Text > p {
+    font-size: 15px;
+}
+
+.logoText > h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logoText > p {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logoIcon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.logoIcon > img {
+    width: 20%;
+    height: 200px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* SERVICEここまで */
+
+
+/* works */
+
+.works {
+    height :1400px;
+}
+
+.worksTitleBox {
+    width: 90%;
+    max-width: 1200px;
+    height: 150px;
+    margin-left: 100px;
+}
+
+.worksTitle{
+    font-size: 100px;
+    color: #403f3fad;
+    filter: drop-shadow(6px 4px 2px  #898989);
+    letter-spacing: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 300;  
+}
+
+.worksTitle > span{
+    font-size: 200px;
+    -webkit-text-stroke: 3px #d085fbc5;
+}
+
+.worksSubTitleBox{
+    margin-left: 500px;
+    margin-top: 30px;
+}
+
+.worksSubTitle{
+    font-size: 40px;
+    color: #403f3fad;
+    letter-spacing: 10px;
+}
+
+.worksSubTitle > span {
+    background:linear-gradient(transparent 0%, transparent 60%, #ffd1d1ef 50%) ;
+    padding-left: 10px;
+}
+
+.worksImgArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 900px;
+    height: 810px;
+    margin: 150px auto;
+}
+
+.worksImgBox {
+    width: 26vw;
+    height: 62vh;
+    max-width: 320px;
+    min-width: 250px;
+    min-height: 730px;
+    text-align: center;
+    background-color: #f3eee8;
+    border: solid 2px ;
+}
+
+.worksContent{
+    margin-top: 20px;
+}
+
+.worksContent > h5 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.worksContent > p {
+    font-size: 18px;
+}
+
+.worksImg {
+    width: 22vw;
+    height: 47vh;
+    max-width: 270px;
+    min-width: 220px;
+    margin-top: 25px;
+    border: solid 5px #5f5650;
+    filter: drop-shadow(8px 8px 2px  #7645457b);
+}
+
+
+/* Works内ボタンエリア */
+
+.readMore {
+    position: relative;
+    width: 370px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    filter: drop-shadow(3px 6px 1px  #807a7a);
+    
+}
+
+.worksBtn{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-left: 25px;
+    border: none;
+    outline: none;
+    background: none;
+    z-index: 101;
+}
+
+.worksBtnImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    
+}
+
+.readMore:active {
+  filter: none;
+  position: relative;
+  top: 3px;
+  }
+
+
+
+/* worksここまで */
+
+
+/* Abouts */
+
+.aboutsTitleBox {
+    max-width: 600px;
+    height: 150px;
+    margin-left: auto;
+    padding-top: 120px;
+    
+}
+
+.aboutsTitle{
+    font-size: 100px;
+    color: #403f3fad;
+    filter: drop-shadow(6px 4px 2px  #898989);
+    letter-spacing: 20px;
+    font-family: 'Rajdhani', sans-serif;
+   
+}
+
+.aboutsTitle > span {
+    font-size: 200px;
+    -webkit-text-stroke: 3px #d085fbc5;
+}
+
+.aboutsSubTitleBox{
+    width: 320px;
+    margin-left: auto;
+    margin-right: 100px;
+    padding-top: 180px;
+}
+
+.aboutsSubTitle{
+    font-size: 40px;
+    color: #403f3fad;
+    letter-spacing: 10px;
+}
+
+.aboutsSubTitle > span {
+    background:linear-gradient(transparent 0%, transparent 60%, #ffd1d1ef 50%);
+    padding-left: 10px;
+}
+
+.PFImg {
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+   
+}
+
+.PFImgBox{
+    margin-left: 15%;
+}
+
+.PFContent {
+    width: 50%;
+    height: 100%;
+}
+
+
+.PFContent > div {
+    display: flex;
+    justify-content:start;
+    align-items: end;
+    width: 82%;
+    height: 110px;
+    border-bottom: 4px solid;
+}
+
+.PFbox1 {
+    width: 75%;
+}
+
+.PFbox2 {
+    margin-left: 60px;
+    max-width: 300px;
+    min-width: 80%;
+    width: 80%;
+}
+
+.PFbox3 {
+    width: 200px;
+    margin-left: auto;
+}
+
+.PFbox1 > h4 {
+    font-size: 22px;
+    min-width: 100px;
+    letter-spacing: 5px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: auto;
+    letter-spacing: 10px;
+
+}
+
+.mail {
+    font-size: 1vw;
+    margin-left: auto;
+    letter-spacing: 2px;
+}
+
+.PFbox2 > h4 {
+    font-size: 22px;
+    min-width: 125px;
+    letter-spacing: 5px;
+}
+
+.PFbox2 > p {
+    font-size: 25px;
+    margin-left: auto;
+    letter-spacing: 15px;
+}
+
+.PFbox3 > p {
+    font-size: 18px;
+    
+}
+
+/* Aboutsここまで */
+
+/* footerここから */
+
+
+footer {
+    position: relative;
+    background-color: #483931;
+    height: 6vh;
+    line-height: 1vh;
+    min-width: 1000px;
+    max-width: 100%;
+    z-index: 502;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+footer > div {
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#copyright {
+    font-size: 17px;
+    letter-spacing: 15px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+/* footerここまで */
+
+/* ----------------------------------------------WORkSページCSS----------------------------------------- */
+
+.worksPg{
+    max-width: 1200px;
+    height: 1500px;
+}
+
+
+
+#WorksPage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #90999b;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: 500;
+}
+
+#WorksBackBox {
+    position: fixed;
+    transform-style:preserve-3d;
+    width: 100%;
+    height: 100%;
+    min-width: 1700px;
+    perspective: 1000px;
+    z-index: 10;
+}
+
+
+#WorksPageArea {
+    position: relative;
+    z-index: 12;
+    max-width: 1200px;
+    min-width: 1000px;
+    height: 3530px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e5f3ea;
+    background-image: linear-gradient(90deg, #b5b4b431 2px, transparent 0),
+	linear-gradient(#b5b4b431 2px, transparent 0);
+	background-size: 100px 100px;
+    border: solid 2px;
+}
+
+
+.worksPageTitle{
+    font-size: 100px;
+    color: #403f3fad;
+    letter-spacing: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 300;  
+    margin-top: 100px;
+    filter: drop-shadow(6px 4px 2px  #898989);
+}
+
+.worksPageTitle > span{
+    font-size: 200px;
+    -webkit-text-stroke: 4px #aa44a765;
+}
+
+
+.worksPageImgArea {
+    max-width: 310px;
+    height: 2800px;
+    margin: 150px auto 0px;
+}
+
+.worksPageImgBox {
+    width: 320px;
+    height: 820px;
+    text-align: center;
+    background-color: #f3eee8;
+    border: solid 2px ;
+    margin-bottom: 70px;
+}
+
+.worksContent{
+    margin-top: 20px;
+}
+
+.worksContent > h5 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.worksContent > p {
+    font-size: 18px;
+}
+
+
+.worksPageImg {
+    width: 270px;
+    height: 600px;
+    margin-top: 25px;
+    border: solid 5px #5f5650;
+    filter: drop-shadow(8px 8px 2px  #7645457b);
+}
+
+.WorksPageRM {
+    position: relative;
+    width: 400px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    filter: drop-shadow(3px 6px 1px  #807a7a);
+    
+}
+
+
+.WorksPageRM:active {
+  filter: none;
+  position: relative;
+  top: 3px;
+  }
+
+
+
+
+
+
+/* footerここまで */
+
+
+  /* -----------------------------------------------WORKSページここまで-------------------------------------------- */
+
+
+
+@media screen and (max-width: 950px) { 
+    /* 幅　950px以下の時　下記適用 */
+
+    #topPage {
+        min-width: 1000px;
+    }
+
+
+    #BackBox { 
+        display: none;
+    }
+
+    #Allarea {
+        min-width: 1000px;
+    }
+
+    .logoIcon > img {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    footer {
+        min-width: 1000px;
+    }
+
+    #copyright {
+        letter-spacing: 12px;
+    }
+
+
+
+    .worksPageImgArea {
+        width: 320px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+    /* 幅　400px以下の時　下記適用 */
+
+    /* TOPPageここから */
+
+    #topPage {
+        min-width: 390px;
+    }
+
+    .box {
+        height: 70vh;
+        text-align: center;
+    }
+
+    #boxe {
+        height: 100%;
+        font-size: 50px;
+        padding-top: 320px;
+        letter-spacing: 5px;
+    }
+
+    #topmark {
+        top: 100px;
+        left: 5%;
+    }
+
+    #mark {
+        height: 50%;
+        margin-top: 50px;
+    }
+
+    .startbox {
+        width: 300px;
+        height: 60px;
+    }
+
+    #strbox {
+        font-size: 30px;
+    }
+
+    /* TOPPageここまで */
+
+
+
+    #BackBox {
+        display: none;
+    }
+
+
+
+    #Allarea {
+        width: 100%;
+        height: 4950px;
+        min-width: 390px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* serviceここから */
+
+    .service {
+        overflow-x: hidden;
+        width: 370px;
+        height: 1300px;
+        border-bottom: solid 1px #403f3f80 ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .serviceTitleBox {
+        width: 380px;
+        height: 90px;
+        text-align: center;
+        padding-top: 0px;
+        margin-top: 50px;
+    }
+
+    .serviceTitle {
+        font-size: 75px;
+        letter-spacing: 10px;
+    }
+
+    .serviceTitle > span {
+        font-size: 100px;
+    }
+    
+    .serviceSubTitlebox {
+        width: 150px;
+        height: 36px;
+        padding-top: 20px;
+    }
+
+    .serviceContent {
+        display: block;
+        width: 370px;
+        height: 640px;
+        text-align: center;
+        margin-top: 140px;
+    }
+
+    .icon {
+        margin-left: 25px;
+    }
+
+    .web {
+        margin-right: 0;
+        margin-top: 100px;
+    }
+
+    .site {
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    
+    .logoIcon {
+        width: 370px;
+        margin-top: 50px;
+       
+    }
+
+    .logoIcon > img {
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* serviceここまで */
+    #BackBox { 
+        min-width: 1000px;
+    }
+
+
+    /* worksここから */
+
+    main {
+        position: relative;
+        width: 100%;
+        height: 4950px;
+        height: 100%;
+        background-color: #687577;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'DotGothic16', sans-serif;
+        font-weight: 500;
+    }
+
+
+    .works {
+        height: 2000px;
+        margin-top: 50px;
+    }
+
+    .worksTitleBox {
+        width: 380px;
+        height: 75px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .worksTitle {
+        width: 300px;
+        font-size: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .worksTitle > span {
+        font-size: 100px;
+    }
+
+    .worksSubTitleBox {
+        width: 100px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .worksSubTitle > span {
+        font-size: 30px;
+    }
+
+    .worksImgArea {
+        display: block;
+        width: 380px;
+        min-width: 0px;
+        height: 1700px;
+        margin-top: 75px;
+    }
+
+    .worksImgBox {
+        width: 250px;
+        height: 550px;
+        min-height: 580px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+
+    .worksImg {
+        width: 200px;
+        height: 400px;
+
+    }
+
+    .worksContent > h5 {
+        margin-bottom: 25px;
+    }
+
+    .worksContent > p {
+        font-size: 15px;
+    }
+
+    .readMore {
+        width: 300px;
+        height: 50px;
+    }
+
+    .worksBtn {
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+
+    /* worksここまで */
+
+
+    /* aboutsここから */
+
+    .abouts {
+        overflow-x: hidden;
+        height: 1400px;
+        margin-top: 200px;
+    }
+
+    .aboutsTitleBox {
+        width: 390px;
+        height: 110px;
+        padding-top: 0px;
+    }
+
+    .aboutsTitle {
+        width: 370px;
+        font-size: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aboutsTitle > span {
+        font-size: 100px;
+    }
+
+    .aboutsSubTitleBox {
+        width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-top: 0px;
+    }
+
+    .profile {
+        display: block;
+        width: 380px;
+        height: 0px;
+        margin-left: 0px;
+    }
+
+    .PFImgBox {
+        width: 380px;
+        margin-left: 0px;
+    }
+
+    .PFImg {
+        width: 380px;
+        height: 390px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .PFContent{
+        height: 500px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .PFContent > div {
+        display: block;
+        width: 100%;
+        height: 140px;
+        border-bottom: solid 3px #403f3f80;
+    }
+
+    .PFbox1 {
+        width: 380px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .PFbox1 > h4 {
+        width: 380px;
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: 0px;
+    }
+
+    .PFbox1 > p {
+        width: 380px;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .PFbox2 {
+        width: 380px;
+        max-width: none;
+        min-width: none;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .PFbox2 > h4 {
+        width: 380px;
+        font-size: 35px;
+        margin-top: 15px;
+    }
+
+    .PFbox2 > p {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .PFbox3 {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .PFbox3 > p {
+        font-size: 20px;
+    }
+
+    /* aboutsここまで */
+
+
+    /* footerここから */
+
+    footer {
+        min-width: 390px;
+    }
+
+  
+
+    footer > div {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    #copyright {
+       font-size: 1em;
+       letter-spacing: 0;
+    }
+
+    /* footerここまで */
+
+
+
+    /* WorksPageレスポンシブここから */
+
+
+    #WorksBackBox {
+        display: none;
+    }
+
+    #WorksPageArea {
+        width: 390px;
+        min-width: 390px;
+        height: 3500px;
+    }
+
+    .worksPageTitle {
+        width: 300px;
+        font-size: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .worksPageTitle > span {
+        font-size: 100px;
+    }
+
+    .worksPg {
+        height: 2000px;
+        width: 390px;
+        margin-top: 50px;
+    }
+
+    .worksPageImgArea {
+        width: 100%;
+        min-width: 390px;
+        height: 2950px;
+    }
+
+    .worksPageImgBox {
+        width: 365px;
+        height: 900px;
+        margin-top: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .worksPageImg {
+        width: 350px;
+        height: 700px;
+    }
+
+    .WorksPageRM {
+        width: 300px;
+        height: 50px;
+        margin-left: 50px;
+        
+    }
+    
+    .WorksPageRM:active {
+      filter: none;
+      position: relative;
+      top: 3px;
+      }
+
+}
